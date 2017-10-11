@@ -9,6 +9,8 @@ var VIBRATE = "settings-vibrate";
 var SOUND = "settings-sound";
 var SOUND_VOLUME = "settings-sound-value";
 
+// Helper functions for Telerik plugins.
+
 var settings = new observable.Observable();
 Object.defineProperty(settings, "name", {
    get: function () { return appSettings.getString(NAME, "John Doe"); },
